@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14221f">
+  <title>Ankit Kumar | Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="resume-page">
+  <header class="resume-toolbar"><a class="resume-back" href="index.html">← Portfolio</a><button type="button" onclick="window.print()">Print / Save as PDF</button></header>
+  <main class="resume-sheet">
+    <p class="eyebrow">MECHANICAL ENGINEERING / RESUME</p>
+    <h1>Ankit Kumar</h1>
+    <p class="resume-role">Diploma Mechanical Engineering Student · Aspiring Mechanical Design Engineer</p>
+    <p class="resume-contact">ankitkumar.mech01@gmail.com · LinkedIn profile · City, Country</p>
+    <section><h2>Profile</h2><p>Mechanical engineering student interested in mechanical design, 3D CAD modelling, engineering drawings, robotics, and CAD automation. Replace this summary with a concise, accurate introduction to your experience and goals.</p></section>
+    <section><h2>Education</h2><div class="resume-line"><b>Diploma in Mechanical Engineering</b><span>Expected graduation: 2027</span></div><p>Noida International University · Greater Noida</p></section>
+    <section><h2>Selected Projects</h2><div class="resume-line"><b>Low-cost mini JCB-style robotic excavator arm</b><span>Design & fabrication</span></div><p>Add your individual contribution, CAD tools, mechanism and actuator details, materials, manufacturing methods, and verified testing outcomes.</p><div class="resume-line"><b>Smart underground water leakage detection system</b><span>Arduino-based concept / prototype</span></div><p>Add the sensor type, circuit arrangement, code contribution, test setup, and measured results. Remove anything that does not match your actual project.</p></section>
+    <section><h2>Technical Skills</h2><p>SolidWorks · AutoCAD · CATIA · Python · MATLAB</p><p>Set each tool to an honest proficiency level and include relevant applications you can discuss.</p></section>
+    <section><h2>Certifications</h2><p><b>ESDP in CATIA</b> · MSME, Greater Noida · 2026</p><p><b>KYP</b> · BSDM · 2025</p><p><b>Tech Talks</b> · Noida International University · 2026</p></section>
+    <section><h2>Career Interests</h2><p>Mechanical design · CAD engineering · Engineering automation</p></section>
+    <p class="resume-placeholder-note">Template content: complete the prompts, verify all details, and remove this note before sending your resume.</p>
+  </main>
+  <style>
+    .resume-page { min-height: 100vh; background: #1b2c28; }
+    .resume-toolbar { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 14px max(24px, calc((100vw - 850px) / 2)); border-bottom: 1px solid var(--line); background: rgba(20, 34, 31, .95); }
+    .resume-toolbar button, .resume-back { padding: 9px 13px; border: 1px solid var(--line-bright); background: transparent; color: var(--paper); font-family: var(--heading); font-size: 12px; cursor: pointer; }
+    .resume-toolbar button:hover, .resume-back:hover { background: rgba(102, 228, 230, .1); }
+    .resume-sheet { width: min(850px, calc(100% - 40px)); margin: 36px auto 70px; padding: clamp(28px, 7vw, 68px); border: 1px solid var(--line); background: #1b2c28; }
+    .resume-sheet h1 { margin: 0 0 4px; font-size: 54px; font-weight: 500; letter-spacing: 0; }
+    .resume-role { margin: 0; font-size: 15px; }.resume-contact { margin: 9px 0 32px; color: var(--muted); font-family: var(--mono); font-size: 10px; }
+    .resume-sheet section { padding-block: 15px; border-top: 1px solid var(--line); }.resume-sheet section h2 { margin: 0 0 8px; color: var(--cyan); font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; }.resume-sheet section p { margin: 5px 0; color: var(--muted); font-size: 12px; line-height: 1.65; }.resume-line { display: flex; justify-content: space-between; gap: 20px; font-size: 12px; }.resume-line span { color: var(--muted); text-align: right; }.resume-placeholder-note { margin: 24px 0 0; color: var(--copper); font-family: var(--mono); font-size: 9px; }
+    @media (max-width: 600px) { .resume-line { flex-direction: column; gap: 2px; }.resume-line span { text-align: left; }.resume-sheet h1 { font-size: 44px; } }
+    @media print { @page { size: A4; margin: 15mm; } body.resume-page { background: #fff; color: #111; font-family: Arial, sans-serif; }.resume-toolbar { display: none; }.resume-sheet { width: 100%; margin: 0; padding: 0; border: 0; background: #fff; }.resume-sheet .eyebrow, .resume-sheet section h2 { color: #137b80; }.resume-sheet h1, .resume-role, .resume-line { color: #111; }.resume-contact, .resume-sheet section p { color: #444; }.resume-sheet section { break-inside: avoid; border-color: #ccc; }.resume-placeholder-note { color: #9b4b00; } }
+  </style>
+</body>
+</html>

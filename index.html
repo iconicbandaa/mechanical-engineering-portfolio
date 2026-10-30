@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14221f">
+  <meta name="description" content="Ankit Kumar's mechanical engineering portfolio: design studies, CAD, robotics and engineering automation.">
+  <title>Ankit Kumar | Mechanical Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <script type="module" src="scene.js"></script>
+</head>
+<body>
+  <svg class="mechanical-backdrop" viewBox="0 0 1440 1100" preserveAspectRatio="xMidYMin slice" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="backdrop-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#77c7cd" stroke-opacity=".16" stroke-width=".7"/></pattern>
+      <pattern id="bearing-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V7" stroke="#80c9ce" stroke-opacity=".6" stroke-width="1"/></pattern>
+    </defs>
+    <rect width="1440" height="1100" fill="url(#backdrop-grid)"/>
+    <g class="backdrop-gear" transform="translate(190 205)">
+      <g class="gear-turn gear-clockwise" fill="none" stroke="#72dce2" stroke-width="1.4">
+        <circle r="108" stroke-dasharray="3 7"/><circle r="91"/><circle r="70" stroke-dasharray="2 5"/>
+        <g stroke-width="13">
+          <path d="M0-111v18M0 93v18M-111 0h18M93 0h18M-78-78l13 13M65 65l13 13M78-78L65-65M-65 65l-13 13"/>
+          <path d="M-42-103l7 17M35 86l7 17M-103 42l17-7M86-35l17-7M-103-42l17 7M86 35l17 7M-42 103l7-17M35-86l7-17" stroke-width="9"/>
+        </g>
+        <circle r="39" stroke-width="2"/><circle r="19" stroke-width="2"/>
+        <path d="M-56 0h112M0-56v112M-39-39l78 78M39-39l-78 78" stroke-opacity=".55"/>
+      </g>
+      <path d="M-146-137h62m-62-4v8m62-8v8M-130 129v39m-4-39h8m-8 39h8" fill="none" stroke="#ffb36b" stroke-width="1" stroke-dasharray="3 4"/>
+      <text x="-143" y="-148">GEAR / ROTATION</text><text x="-125" y="185">ASSEMBLY A</text>
+    </g>
+    <g class="backdrop-gear" transform="translate(1252 795)">
+      <g class="gear-turn gear-counter" fill="none" stroke="#7895ff" stroke-width="1.3">
+        <circle r="83" stroke-dasharray="3 6"/><circle r="68"/><circle r="47" stroke-dasharray="2 5"/>
+        <g stroke-width="11">
+          <path d="M0-82v14M0 68v14M-82 0h14M68 0h14M-58-58l10 10M48 48l10 10M58-58L48-48M-48 48l-10 10"/>
+          <path d="M-31-76l6 13M25 63l6 13M-76 31l13-6M63-25l13-6M-76-31l13 6M63 25l13 6M-31 76l6-13M25-63l6-13" stroke-width="8"/>
+        </g>
+        <circle r="26" stroke-width="2"/><circle r="10" stroke-width="2"/>
+        <path d="M-39 0h78M0-39v78" stroke-opacity=".55"/>
+      </g>
+      <text x="-72" y="-102">GEAR / DETAIL</text><text x="-53" y="118">ROTATION B</text>
+    </g>
+    <g class="shaft-drawing" fill="none" stroke="#7ddde0" stroke-width="1.2">
+      <path d="M575 515h755m-755-16v32m755-32v32" stroke-dasharray="5 5" opacity=".8"/>
+      <path d="M576 496h755v38H576z" fill="#193039" fill-opacity=".2"/>
+      <path d="M642 489v52m22-52v52m-22-43h22m-22 34h22M1117 489v52m22-52v52m-22-43h22m-22 34h22"/>
+      <path d="M628 480h49v70h-49zm475 0h49v70h-49z" fill="url(#bearing-hatch)" fill-opacity=".35"/>
+      <path d="M628 480h49v70h-49zm475 0h49v70h-49z"/>
+      <circle cx="652" cy="515" r="17"/><circle cx="652" cy="515" r="8"/>
+      <circle cx="1127" cy="515" r="17"/><circle cx="1127" cy="515" r="8"/>
+      <path d="M548 458v114m-5-114h10m-10 114h10M1302 458v114m-5-114h10m-10 114h10" stroke-dasharray="3 4"/>
+      <path d="M797 496v38m24-38v38m-24-19h24M924 496v38m24-38v38m-24-19h24" stroke="#ffb36b" stroke-width="2"/>
+    </g>
+    <g class="shaft-spin" transform="translate(652 515)" fill="none" stroke="#ffb36b" stroke-width="2">
+      <circle r="5"/><path d="M-11 0h22M0-11v22"/>
+    </g>
+    <g fill="#a0c2c5" font-family="DM Mono, monospace" font-size="10" letter-spacing="1.2">
+      <text x="594" y="465">SHAFT / BEARING SUPPORT</text><text x="631" y="574">BEARING A</text><text x="1105" y="574">BEARING B</text><text x="946" y="481">SPACER / COLLAR</text>
+    </g>
+    <g fill="none" stroke="#75cbd0" stroke-width="1" opacity=".75">
+      <path d="M270 677h290m-290-7v14m290-14v14M304 650v-56h142v56m-126-56v-42h109v42m-93-42v-42h77v42" stroke-dasharray="4 5"/>
+      <path d="M290 691l28-28m236 28-28-28M472 612h62m-62-4v8m62-8v8"/>
+      <circle cx="375" cy="534" r="11"/><circle cx="375" cy="534" r="4"/><circle cx="375" cy="591" r="9"/><circle cx="375" cy="591" r="4"/><circle cx="375" cy="650" r="8"/><circle cx="375" cy="650" r="3"/>
+    </g>
+    <g fill="#a0c2c5" font-family="DM Mono, monospace" font-size="9" letter-spacing="1.1"><text x="275" y="712">LINKAGE / DESIGN STUDY</text><text x="473" y="600">SECTION</text><text x="336" y="512">PIVOT</text></g>
+  </svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar" id="top">
+      <a class="brand" href="#home" aria-label="Ankit Kumar portfolio home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>ANKIT KUMAR<span class="brand-dot">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="resume.html">Resume <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        <a class="nav-contact" href="#contact">Let's talk <i data-lucide="move-up-right" aria-hidden="true"></i></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-pip"></span> DIPLOMA MECHANICAL ENGINEERING <span class="eyebrow-index">/ 01</span></p>
+          <h1 id="hero-title">Designing the<br><span class="title-outline">mechanics</span><br>of what’s next<span class="title-period">.</span></h1>
+          <p class="hero-role">Mechanical Engineering Student <span>·</span> Aspiring Mechanical Design Engineer</p>
+          <p class="hero-intro">I’m Ankit Kumar, interested in practical mechanisms, thoughtful CAD, and automation. This portfolio follows my learning and engineering projects.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my projects <i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+            <a class="button button-quiet" href="resume.html" aria-label="Open resume template to print or save as PDF">Download resume <i data-lucide="download" aria-hidden="true"></i></a>
+          </div>
+          <div class="social-row" aria-label="Social links">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn (replace with your profile)">LinkedIn <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <span class="social-divider"></span>
+            <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub (replace with your profile)">GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Interactive mechanical gear and linkage study">
+          <div class="visual-header"><span>MECH / STUDY_001</span><span class="live-state"><span></span> INTERACTIVE MODEL</span></div>
+          <div class="visual-stage">
+            <div class="stage-grid" aria-hidden="true"></div>
+            <svg class="stage-blueprint" viewBox="0 0 640 520" role="img" aria-label="Technical line drawing of an articulated mechanical linkage">
+              <g fill="none" stroke="currentColor" stroke-width="1.1">
+                <circle cx="320" cy="270" r="188" stroke-dasharray="3 7" opacity=".55"/>
+                <circle cx="320" cy="270" r="142" opacity=".28"/>
+                <path d="M91 376h117l42-51 108-4 60-101 84-17" stroke-width="2"/>
+                <path d="M91 390h118l48-55 105-3 65-102 75-20" opacity=".38"/>
+                <path d="M234 325l18-67 106 9 60-47M252 258l-18 67M358 267l-7 54M418 220l64-17"/>
+                <circle cx="252" cy="258" r="11"/><circle cx="358" cy="267" r="10"/><circle cx="418" cy="220" r="8"/>
+                <path d="M251 242v-20m108 29 17-11m50-31 13-16M112 406h75m291-209 48-10" stroke-dasharray="4 5"/>
+                <path d="M320 46v42m0 364v24M96 270h42m364 0h42" opacity=".35"/>
+              </g>
+              <g fill="currentColor" font-family="DM Mono, monospace" font-size="9" letter-spacing="1.4">
+                <text x="419" y="200">PIVOT B</text><text x="363" y="249">PIVOT A</text>
+                <text x="78" y="424">LINKAGE ENVELOPE / CONCEPT</text>
+                <text x="468" y="381">R 188</text>
+              </g>
+            </svg>
+            <canvas id="mechanism-canvas" aria-hidden="true"></canvas>
+            <div class="visual-callout callout-top"><span>01</span><b>ROTARY<br>ASSEMBLY</b><i></i></div>
+            <div class="visual-callout callout-bottom"><i></i><span>AXIS / Z</span><b>360°</b></div>
+            <div class="axis-indicator" aria-hidden="true"><span>X</span><span>Y</span><span>Z</span><i></i></div>
+            <div class="stage-corner corner-tl"></div><div class="stage-corner corner-br"></div>
+          </div>
+          <div class="visual-footer"><span>CAD / KINEMATICS / ITERATION</span><span>MODEL 01 <i data-lucide="orbit" aria-hidden="true"></i></span></div>
+        </div>
+        <div class="hero-index"><span>01</span><i></i><span>05</span></div>
+        <a class="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><i data-lucide="arrow-down" aria-hidden="true"></i></a>
+      </section>
+
+      <section class="intro-band" aria-label="Focus areas">
+        <div class="section-wrap intro-band-inner">
+          <span class="band-label">CURRENT FOCUS</span>
+          <span>MECHANICAL DESIGN</span><i></i><span>3D CAD</span><i></i><span>ROBOTICS</span><i></i><span>ENGINEERING AUTOMATION</span>
+        </div>
+      </section>
+
+      <section class="content-section section-wrap about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">PROFILE / 02</p>
+          <h2 id="about-title">Curiosity, made<br><span>mechanical.</span></h2>
+        </div>
+        <div class="about-content reveal">
+          <p class="about-lede">I’m building a foundation in mechanical engineering through hands-on design thinking, digital tools, and a steady habit of learning by making.</p>
+          <p class="body-copy">I’m especially interested in 3D CAD modelling, mechanical design, and the engineering drawings that turn an idea into something a team can build. Robotics and CAD automation bring those interests together with programming: from understanding how a mechanism moves to making repetitive design tasks more efficient.</p>
+          <p class="body-copy">This portfolio is a snapshot in progress. Project details, results, and credentials are intentionally left editable so the page can reflect the work accurately as it develops.</p>
+          <div class="profile-fields" aria-label="Editable education and career details">
+            <label class="profile-field"><span>PROGRAM</span><input data-profile="program" value="Diploma in Mechanical Engineering" aria-label="Diploma program"></label>
+            <label class="profile-field"><span>INSTITUTION</span><input data-profile="college" value="Noida International University, Greater Noida" aria-label="College name"></label>
+            <label class="profile-field"><span>EXPECTED GRADUATION</span><input data-profile="graduation" value="2027" aria-label="Expected graduation year"></label>
+            <label class="profile-field"><span>INTERNSHIP AVAILABILITY</span><select data-profile="availability" aria-label="Internship availability"><option value="">Set availability</option><option>Open to internships</option><option>Not currently looking</option><option>Available from (add date)</option></select></label>
+            <label class="profile-field field-wide"><span>CAREER INTERESTS</span><input data-profile="interests" value="Mechanical design · CAD engineering · Automation" aria-label="Career interests"></label>
+          </div>
+          <p class="save-note"><i data-lucide="database" aria-hidden="true"></i> Profile edits save in this browser only.</p>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-wrap">
+          <div class="skills-top section-heading reveal">
+            <div><p class="eyebrow">TOOLKIT / 03</p><h2 id="skills-title">Tools for <span>making.</span></h2></div>
+            <p class="skills-note">A developing toolkit. Set each level to match your current experience.</p>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-card reveal">
+              <div class="skill-card-top"><span class="skill-number">01 / CAD</span><span class="skill-glyph glyph-solid" aria-hidden="true">S</span></div>
+              <h3>SolidWorks</h3><p>Part and assembly modelling, design intent, drawings, and mechanism studies.</p>
+              <label class="level-control"><span>MY LEVEL</span><select data-skill="SolidWorks" aria-label="SolidWorks proficiency"><option value="">Set level</option><option>Foundational</option><option selected>Developing</option><option>Proficient</option><option>Advanced</option></select></label>
+              <a class="skill-project" href="#project-excavator">Related: Mini excavator arm <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-card-top"><span class="skill-number">02 / CAD</span><span class="skill-glyph glyph-auto" aria-hidden="true">A</span></div>
+              <h3>AutoCAD</h3><p>2D drafting, dimensioned engineering drawings, and clear technical documentation.</p>
+              <label class="level-control"><span>MY LEVEL</span><select data-skill="AutoCAD" aria-label="AutoCAD proficiency"><option value="">Set level</option><option>Foundational</option><option selected>Developing</option><option>Proficient</option><option>Advanced</option></select></label>
+              <a class="skill-project" href="#project-excavator">Related: Drawing set <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-card-top"><span class="skill-number">03 / CAD</span><span class="skill-glyph glyph-catia" aria-hidden="true">C</span></div>
+              <h3>CATIA</h3><p>Parametric part design, surface exploration, and multi-part assembly workflows.</p>
+              <label class="level-control"><span>MY LEVEL</span><select data-skill="CATIA" aria-label="CATIA proficiency"><option value="">Set level</option><option>Foundational</option><option selected>Developing</option><option>Proficient</option><option>Advanced</option></select></label>
+              <a class="skill-project" href="#project-excavator">Related: Mechanism study <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-card-top"><span class="skill-number">04 / CODE</span><span class="skill-glyph glyph-python" aria-hidden="true"><i></i><i></i></span></div>
+              <h3>Python</h3><p>Engineering calculations, data handling, and small scripts for repeatable workflows.</p>
+              <label class="level-control"><span>MY LEVEL</span><select data-skill="Python" aria-label="Python proficiency"><option value="">Set level</option><option>Foundational</option><option selected>Developing</option><option>Proficient</option><option>Advanced</option></select></label>
+              <a class="skill-project" href="#project-leakage">Related: Sensor logic <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </article>
+            <article class="skill-card skill-card-wide reveal">
+              <div class="skill-card-top"><span class="skill-number">05 / COMPUTE</span><span class="skill-glyph glyph-matlab" aria-hidden="true">M</span></div>
+              <div class="skill-wide-copy"><h3>MATLAB</h3><p>Numerical methods, plotting, and simulation concepts for mechanical engineering problems.</p></div>
+              <label class="level-control"><span>MY LEVEL</span><select data-skill="MATLAB" aria-label="MATLAB proficiency"><option value="">Set level</option><option>Foundational</option><option selected>Developing</option><option>Proficient</option><option>Advanced</option></select></label>
+              <a class="skill-project" href="#projects">Related: Add a project <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </article>
+          </div>
+          <p class="save-note skill-save-note"><i data-lucide="database" aria-hidden="true"></i> Skill levels save in this browser only.</p>
+        </div>
+      </section>
+
+      <section class="projects-section section-wrap" id="projects" aria-labelledby="projects-title">
+        <div class="projects-heading section-heading reveal">
+          <div><p class="eyebrow">SELECTED WORK / 04</p><h2 id="projects-title">Ideas under<br><span>construction.</span></h2></div>
+          <p class="projects-note">Two engineering problem spaces. Replace concept prompts with your verified CAD, circuit, and test documentation.</p>
+        </div>
+
+        <article class="project project-excavator reveal" id="project-excavator">
+          <div class="project-art art-excavator">
+            <div class="art-label"><span>01 / MECHANICAL DESIGN</span><span>CONCEPT PLATE</span></div>
+            <svg viewBox="0 0 780 480" role="img" aria-labelledby="excavator-art-title excavator-art-desc">
+              <title id="excavator-art-title">Mini excavator arm concept drawing</title>
+              <desc id="excavator-art-desc">A technical line illustration showing a tracked base, articulated boom, bucket linkage, pivot marks, and dimension guide.</desc>
+              <defs><pattern id="exc-grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#7091a0" stroke-opacity=".15" stroke-width=".7"/></pattern><linearGradient id="boom-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#57e5f1" stop-opacity=".28"/><stop offset="1" stop-color="#6c89ff" stop-opacity=".05"/></linearGradient></defs>
+              <rect width="780" height="480" fill="url(#exc-grid)"/>
+              <g fill="none" stroke="#7fe9ef" stroke-width="1" opacity=".6"><path d="M64 404h652M110 91v321M650 75v328" stroke-dasharray="4 7"/><path d="M94 118h164m-164-5v10m164-10v10M673 176v185m-5-185h10m-10 185h10"/><circle cx="393" cy="318" r="145" stroke-dasharray="3 7"/><path d="M193 394h93m-93-5v10m93-10v10"/></g>
+              <g fill="none" stroke="#c6f4f4" stroke-linejoin="round" stroke-linecap="round">
+                <path d="M178 356h232l-23 42H158z" fill="#142a35" stroke-width="2"/>
+                <path d="M190 356c0-23 15-41 34-41h151c20 0 35 18 35 41" stroke-width="2"/>
+                <path d="M199 364h199" stroke-dasharray="5 5"/><circle cx="227" cy="378" r="8"/><circle cx="373" cy="378" r="8"/>
+                <path d="M287 315l37-72 105 13 83-98 59 20-91 122-120-11-40 56z" fill="url(#boom-fill)" stroke-width="2.6"/>
+                <path d="M324 243l29 14m76-1 14 29m69-127 26 15" stroke="#7fe9ef" stroke-width="1.3"/>
+                <path d="M318 318l13-63 85 12 39-41M328 291l90-14 40-45" stroke="#ffb36b" stroke-width="2"/>
+                <path d="M568 178l54 17-12 45-52-28z" fill="#192b35" stroke-width="2"/>
+                <path d="M604 233l45 25-42 50-18-28" fill="#192b35" stroke-width="2"/>
+                <circle cx="324" cy="243" r="8" fill="#071014" stroke-width="2"/><circle cx="429" cy="256" r="8" fill="#071014" stroke-width="2"/><circle cx="512" cy="158" r="8" fill="#071014" stroke-width="2"/>
+              </g>
+              <g fill="#99b9c3" font-family="monospace" font-size="10" letter-spacing="1.5"><text x="98" y="105">BOOM / LINKAGE ASSEMBLY</text><text x="532" y="139">PIVOT 02</text><text x="235" y="302">BASE PIVOT</text><text x="664" y="280" transform="rotate(90 664 280)">ENVELOPE / VERIFY</text><text x="316" y="426">UNDERCARRIAGE / CONCEPT</text></g>
+              <g fill="#ffb36b"><circle cx="324" cy="243" r="3"/><circle cx="429" cy="256" r="3"/><circle cx="512" cy="158" r="3"/></g>
+            </svg>
+            <div class="art-stamp"><span>MECH STUDY</span><b>A—01</b><span>NOT TO SCALE</span></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker"><span>01 / DESIGN & FABRICATION</span><span>MECHANISM · CAD · PROTOTYPE</span></div>
+            <h3>Low-cost mini JCB-style<br>robotic excavator arm</h3>
+            <p class="project-summary">A compact excavator-arm study exploring how linked members and simple actuation can reproduce a useful digging motion at an accessible scale.</p>
+            <div class="project-details">
+              <div class="detail-block"><h4>Design objective</h4><p>Develop a low-cost arm concept with a stable base, clear joint motion, and a bucket path suitable for a small demonstration prototype.</p></div>
+              <div class="detail-block"><h4>Mechanism & actuation</h4><p>Document the boom, dipper, bucket linkage, pivot locations, and actuator choice here. Add the actual actuator type, stroke, mounting points, and motion limits after confirming the build.</p></div>
+              <div class="detail-block"><h4>Materials & fabrication</h4><p>Add the materials, stock thicknesses, fasteners, and manufacturing methods used (for example: cutting, drilling, printing, or hand fabrication). No material or process is assumed yet.</p></div>
+              <div class="detail-block"><h4>Challenges & next iteration</h4><p>Record observed joint play, structural deflection, stability, and bucket control. Note the change made for each issue and what should be tested next.</p></div>
+            </div>
+            <div class="project-bottom">
+              <div class="project-tags"><span>3D CAD</span><span>LINKAGES</span><span>FABRICATION</span></div>
+              <details class="results-details"><summary>Results & testing prompts <i data-lucide="plus" aria-hidden="true"></i></summary><p>Add test date, payload, reach, repeatability, and any measured result. Include the CAD assembly, drawings, and real build photos when available. Do not report unmeasured performance as a result.</p></details>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-leakage reveal" id="project-leakage">
+          <div class="project-art art-leakage">
+            <div class="art-label"><span>02 / EMBEDDED SYSTEMS</span><span>SYSTEM PLATE</span></div>
+            <svg viewBox="0 0 780 480" role="img" aria-labelledby="leak-art-title leak-art-desc">
+              <title id="leak-art-title">Underground water leakage detection system diagram</title>
+              <desc id="leak-art-desc">Block diagram linking a buried leak sensor to an Arduino controller and a local alert output.</desc>
+              <defs><pattern id="leak-grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#7091a0" stroke-opacity=".15" stroke-width=".7"/></pattern></defs>
+              <rect width="780" height="480" fill="url(#leak-grid)"/>
+              <g fill="none" stroke="#9be6d1" stroke-width="1.5" opacity=".76"><path d="M87 336h610" stroke-dasharray="5 6"/><path d="M89 346h610"/><path d="M136 337v-96m0 0h112m0 0v38"/><path d="M513 278v-38h124v99"/><path d="M252 277h61m195 0h61" stroke="#ffb36b" stroke-width="2"/><path d="M294 269l19 8-19 8m196-8 19 8-19 8" fill="#ffb36b" stroke="none"/></g>
+              <g stroke="#d5f3ed" stroke-width="1.4">
+                <rect x="90" y="140" width="158" height="103" rx="3" fill="#10252a"/><rect x="313" y="170" width="195" height="108" rx="3" fill="#152931"/><rect x="513" y="140" width="124" height="100" rx="3" fill="#10252a"/>
+                <path d="M145 110c-11 16-16 23-16 32a19 19 0 0038 0c0-9-9-23-22-39z" fill="#153d40"/><path d="M132 202h72m-62-14h51m-38-16h25" stroke="#83dfce"/><circle cx="411" cy="226" r="18" fill="#0c161b"/><path d="M384 202h54v-14h-54zm0 49h54v-14h-54z" fill="#183741"/><path d="M542 190h65v31h-65z" fill="#132c31"/><path d="M552 213l15-14 12 9 17-16" fill="none" stroke="#ffb36b"/>
+              </g>
+              <g fill="#a9c5c6" font-family="monospace" font-size="10" letter-spacing="1.2"><text x="110" y="158">LEAK SENSOR</text><text x="337" y="189">ARDUINO</text><text x="529" y="158">ALERT OUTPUT</text><text x="107" y="270">SENSOR TYPE / ADD</text><text x="338" y="305">READ → DECIDE</text><text x="533" y="265">BUZZER / LED?</text><text x="116" y="384">BURIED PIPE ROUTE / CONCEPT</text><text x="556" y="384">SIGNAL PATH</text></g>
+              <g fill="#ffb36b"><circle cx="248" cy="241" r="3"/><circle cx="508" cy="240" r="3"/></g>
+            </svg>
+            <div class="art-stamp"><span>CONTROL STUDY</span><b>B—02</b><span>BLOCK DIAGRAM</span></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker"><span>02 / SMART MONITORING</span><span>ARDUINO · SENSING · ALERT</span></div>
+            <h3>Smart underground water<br>leakage detection system</h3>
+            <p class="project-summary">A proposed sensing system to identify water leakage along an underground route and alert a user, linking a sensor arrangement to an Arduino-based controller.</p>
+            <div class="project-details">
+              <div class="detail-block"><h4>Problem & approach</h4><p>Underground leaks can be difficult to spot early. The concept places sensing points near a pipe route and uses a controller to interpret a detection signal and trigger an alert.</p></div>
+              <div class="detail-block"><h4>Sensor arrangement</h4><p>Add the actual sensor model, placement interval, wiring layout, and test conditions. The drawing is a system block diagram, not a finished circuit schematic.</p></div>
+              <div class="detail-block"><h4>Components</h4><p>Arduino board (exact model to add), leak sensor(s) (type to confirm), alert device (LED / buzzer / other), power source, and connecting wires. Update this list to match the prototype.</p></div>
+              <div class="detail-block"><h4>Working principle</h4><p>The sensor provides an input to the controller; the program checks that input against the chosen detection condition and activates the configured alert. Add threshold, timing, and reset behavior from the actual implementation.</p></div>
+            </div>
+            <div class="project-bottom">
+              <div class="project-tags"><span>ARDUINO</span><span>SENSORS</span><span>PROTOTYPING</span></div>
+              <details class="results-details"><summary>Circuit & validation prompts <i data-lucide="plus" aria-hidden="true"></i></summary><p>Add the real circuit diagram, pin map, sensor calibration notes, false-trigger checks, response time, and test outcomes. Include photos or serial-monitor evidence when available.</p></details>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="cert-section" id="certifications" aria-labelledby="cert-title">
+        <div class="section-wrap cert-layout">
+          <div class="section-heading reveal"><p class="eyebrow">LEARNING LOG / 05</p><h2 id="cert-title">Credentials &<br><span>courses.</span></h2></div>
+          <div class="cert-list reveal" aria-label="Editable certification entries">
+            <label class="cert-row"><span class="cert-index">01</span><input data-cert="one" value="ESDP in CATIA" aria-label="First certification or course"><input data-cert-org="one" value="MSME, Greater Noida · 2026" aria-label="First certification issuer and year"><i data-lucide="arrow-up-right" aria-hidden="true"></i></label>
+            <label class="cert-row"><span class="cert-index">02</span><input data-cert="two" value="KYP" aria-label="Second certification or course"><input data-cert-org="two" value="BSDM · 2025" aria-label="Second certification issuer and year"><i data-lucide="arrow-up-right" aria-hidden="true"></i></label>
+            <label class="cert-row"><span class="cert-index">03</span><input data-cert="three" value="Tech Talks" aria-label="Third certification or course"><input data-cert-org="three" value="Noida International University · 2026" aria-label="Third certification issuer and year"><i data-lucide="arrow-up-right" aria-hidden="true"></i></label>
+            <p class="save-note"><i data-lucide="database" aria-hidden="true"></i> Certification edits save in this browser only.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy reveal"><p class="eyebrow">CONTACT / 06</p><h2 id="contact-title">Let’s build<br>something <span>useful.</span></h2><p class="contact-text">Open to learning, project conversations, and internship opportunities in mechanical design and engineering.</p></div>
+        <div class="contact-side reveal">
+          <a class="contact-email" href="mailto:ankitkumar.mech01@gmail.com">ankitkumar.mech01@gmail.com <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <p>Replace this address with your preferred email before publishing.</p>
+          <a class="button button-primary" href="mailto:ankitkumar.mech01@gmail.com?subject=Engineering%20portfolio">Start a conversation <i data-lucide="send" aria-hidden="true"></i></a>
+          <div class="contact-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>ANKIT KUMAR<span class="brand-dot">.</span></span></a><p>DESIGNED TO KEEP ITERATING <span>© <span id="current-year"></span> ANKIT KUMAR</span></p><a class="back-top" href="#top" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></a></footer>
+  </div>
+</body>
+</html>
